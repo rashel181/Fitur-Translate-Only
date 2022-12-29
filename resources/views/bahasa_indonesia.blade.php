@@ -24,40 +24,16 @@
                         <form action="{{ route('bahasa_indonesia') }}" method="get">
                             <div class="input-group">
                                 <textarea class="form-control" name="keyword" aria-label="With textarea"></textarea>
-                                {{-- <button class="input-group-text btn btn-primary" name="bahasa" type="search"
-                                    value="b_ind">
-                                    indo
-                                </button> --}}
-                                {{-- <button class="input-group-text btn btn-primary" name="bahasa" type="search"
-                                    value="b_osing">
-                                    osing
-                                </button> --}}
-    
-                                <div class="dropdown">
-                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Profile
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item">test1</a></li>
-                                        <li><a class="dropdown-item">test2</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                    @else
-                        <form action="{{ route('bahasa_indonesia') }}" method="get">
-                            <div class="input-group">
-                                <textarea class="form-control" name="keyword" aria-label="With textarea"></textarea>
-                                {{-- <button class="input-group-text btn btn-primary" name="bahasa" type="search"
+                                <button class="input-group-text btn btn-primary" name="bahasa" type="search"
                                     value="b_ind">
                                     indo
                                 </button>
                                 <button class="input-group-text btn btn-primary" name="bahasa" type="search"
                                     value="b_osing">
                                     osing
-                                </button> --}}
-                                <div class="dropdown">
+                                </button>
+
+                                {{-- <div class="dropdown">
                                     <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Profile
@@ -66,7 +42,32 @@
                                         <li><a class="dropdown-item">test1</a></li>
                                         <li><a class="dropdown-item">test2</a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
+                            </div>
+                        </form>
+                    @else
+                        <form action="{{ route('bahasa_indonesia') }}" method="get">
+                            <div class="input-group">
+                                <textarea class="form-control" name="keyword" aria-label="With textarea"></textarea>
+                                <button class="input-group-text btn btn-primary" name="bahasa" type="search"
+                                    value="b_ind">
+                                    indo
+                                </button>
+                                <button class="input-group-text btn btn-primary" name="bahasa" type="search"
+                                    value="b_osing">
+                                    osing
+                                </button>
+
+                                {{-- <div class="dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Profile
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item">test1</a></li>
+                                        <li><a class="dropdown-item">test2</a></li>
+                                    </ul>
+                                </div> --}}
                             </div>
                         </form>
                         @if ($bahasa == 'b_ind')
